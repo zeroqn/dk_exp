@@ -1,3 +1,5 @@
 function (args) {
-  return args.x + args.y;
+  return JSON.stringify({
+    ret: args.x + args.y
+  });
 };

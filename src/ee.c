@@ -82,7 +82,7 @@ int main(int argc, char *argv[]) {
 
     // Call our funtion
     duk_call(ctx, 1);
-    printf("function result: %lf\n", (double) duk_get_number(ctx, -1));
+    printf("function result: %s\n", duk_get_string(ctx, -1));
 
     duk_pop(ctx);
     duk_destroy_heap(ctx);
